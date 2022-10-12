@@ -1,0 +1,31 @@
+.divMensajes{
+    border: solid 1px;
+    padding: 14px;
+}
+
+.productos{
+    display: flex;
+    align-items: center;
+}
+
+.mensajes{
+    margin-top: 200px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.plantillaProductos{
+    position: absolute;
+    left: 1%;
+    border: solid 1px;
+    margin-bottom: -7%;
+    padding: 6px;
+    padding-right: 275px;
+}
+.formMensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 529px;
+}

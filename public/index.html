@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Websocket</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h1>Agregar productos</h1>
+
+    <div class="productos">
+        <form onsubmit="return addProduct(this)">
+            <input type="text" id="name" placeholder="Nombre producto">
+            <input type="text" id="precio" placeholder="Precio">
+            <input type="submit" value="Enviar!">
+        </form>
+
+        <div class="plantillaProductos">
+            <div id="productos"></div>
+        </div>
+    </div>
+
+    <div class="mensajes">
+    <h1>Chat de mensajes</h1>
+        <form onsubmit="return addMessage(this)" class="formMensaje">
+            <input type="text" id="email" placeholder="E-mail" required>
+            <div id="mensajes" class="divMensajes"></div>
+            <input type="text" id="texto" placeholder="Cuentanos algo...">
+            <input type="submit" value="Enviar!">
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
