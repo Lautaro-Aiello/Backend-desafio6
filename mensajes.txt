@@ -1,1 +1,1 @@
-[[{"email":"galluccimp@hotmail.com","mensaje":"hola todo bien?"}],[{"email":"kito_massabalero@hotmail.com","mensaje":"hola todo bien?"}]]
+[]

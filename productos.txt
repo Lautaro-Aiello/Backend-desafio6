@@ -1,1 +1,1 @@
-[[{"nombre":"remera","precio":"4500"}],{"nombre":"remera","precio":"4500"},{"nombre":"","precio":""},{"nombre":"motaro","precio":"4500"},[{"nombre":"remera","precio":"4500"}],[{"nombre":"remera","precio":"4500"}],[{"nombre":"remera","precio":"4500"}],[{"nombre":"remera","precio":"4500"}],[{"nombre":"remera","precio":"3400"}],{"nombre":"remera","precio":"3400"},[{"nombre":"remera","precio":"4500"}],{"nombre":"lautaro","precio":"4500"},[{"nombre":"lautaro","precio":"4500"}],{"nombre":"lautaro","precio":"4500"}]
+[]
