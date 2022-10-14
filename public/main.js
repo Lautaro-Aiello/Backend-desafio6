@@ -36,7 +36,7 @@ function renderProducts(data){
         return(`<div>
                 <strong>${elem.nombre}</strong>
                 <em>$ ${elem.precio}</em> </div>`)
-    })
+    }).join(" ");
     
     document.getElementById("productos").innerHTML= html;
 }

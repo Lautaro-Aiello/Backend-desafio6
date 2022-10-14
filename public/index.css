@@ -1,6 +1,10 @@
 .divMensajes{
     border: solid 1px;
     padding: 14px;
+    margin-bottom: 12px;
+    margin-top: 13px;
+    height: 67px;
+    overflow-y: scroll;
 }
 
 .productos{
@@ -17,11 +21,13 @@
 }
 .plantillaProductos{
     position: absolute;
-    left: 1%;
+    top: 29%;
+    bottom: 65%;
     border: solid 1px;
     margin-bottom: -7%;
     padding: 6px;
     padding-right: 275px;
+    overflow-y: scroll;
 }
 .formMensaje{
     display: flex;

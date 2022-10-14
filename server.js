@@ -22,24 +22,26 @@ io.on("connection", function (socket) {
     socket.emit("productos", productos) // emitimos los productos al cliente
 
     socket.on("new-message", function (data) {
-        io.sockets.emit("mensajes", mensajes); // emitimos todos lo mensajes a todos
         if(mensajes.length === 0){
             mensajes.push(data); // le pasamos todos los mensajes a la base de datos y txt
             contenedorMensajes.save(mensajes)
+            io.sockets.emit("mensajes", mensajes); // emitimos todos lo mensajes a todos
         }else{
             mensajes.push(data) // le pasamos 1 mensaje a la base de datos y txt
             contenedorMensajes.save(data)
+            io.sockets.emit("mensajes", mensajes); // emitimos todos lo mensajes a todos
         }
     })
 
     socket.on("new-product", function (producto){
-        io.sockets.emit("productos", productos) // mostramos todos los productos
         if(productos.length === 0){
             productos.push(producto) // ingresamos todos los productos en el array y txt
             contenedorProductos.save(productos)
+            io.sockets.emit("productos", productos) // mostramos todos los productos
         }else{
             productos.push(producto) // ingresamos 1 solo producto en el array y txt
             contenedorProductos.save(producto)
+            io.sockets.emit("productos", productos) // mostramos todos los productos
         }
     })
 })
